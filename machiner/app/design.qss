@@ -1,0 +1,129 @@
+/* Цвет вкладок методов */
+QTabBar#tab {
+    background: red;
+}
+
+/* Цвет вкладок методов при наведении */
+QTabBar::tab:hover#tab {
+    background-color: rgba(60, 60, 60, 255);
+}
+
+/**/
+QTabBar::tab#tab {
+    background: rgba(30, 30, 30, 255);
+    color: white;
+}
+QTabBar::tab:selected#tab {
+    background-color: rgba(60, 60, 60, 255);
+    color: #000000;
+}
+QTabWidget::tab-bar#tab_widget {
+    left: 0;
+    color: white;
+}
+QTabWidget::pane {
+    background: rgba(30, 30, 30, 255);
+    border-top: 1px solid rgba(30, 30, 30, 255);
+    border-left: 1px solid rgba(30, 30, 30, 255);
+    border-right: 1px solid rgba(30, 30, 30, 255);
+    border-bottom: 1px solid rgba(30, 30, 30, 255);
+}
+
+/* Линия разделения между выбором метода ML и содержимым */
+QTabWidget::pane#tab_widget {
+    border-left: 2px solid rgba(80, 80, 80, 255);
+}
+
+QTabWidget#tab_widget {
+    background: rgba(15, 15, 15, 255);
+}
+
+/* Для наведенных вкладок внутри метода */
+QTabBar::tab:hover#menu_bar {
+    background-color: #A62A88;
+}
+
+/* Вкладки внутри метода */
+QTabBar::tab#menu_bar {
+    background: rgba(80, 80, 80, 255);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+/* Для строк ввода */
+QLineEdit {
+    background: rgba(15, 15, 15, 255);
+    border-style: none;
+}
+
+
+/* Цвет нажатой кнопки вкладки внутри метода */
+QTabBar::tab:selected#menu_bar {
+    background-color: #A62A88;
+}
+
+/* Цвет текста везде */
+QWidget {
+    color: white;
+    font-size: 14pt;
+}
+
+/* Цвет фона для диалоговых окон */
+QDialog {
+    background: rgba(30, 30, 30, 255);
+}
+
+QPushButton:pressed {
+    background-color: rgb(80, 80, 80);
+}
+
+QPushButton {
+    background-color: rgb(100, 100, 100);
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* Выпадающий список */
+QComboBox {
+    background-color: rgb(100, 100, 100);
+    border-radius: 3px;
+    margin: 2px;
+    padding-left: 5px;
+}
+
+QComboBox QListView {
+    background: rgba(15, 15, 15, 255);
+}
+
+/* Хэдеры (в таблицах) */
+QHeaderView::section:horizontal {
+    background: rgba(15, 15, 15, 255);  
+    border: 1px solid rgb(200, 200, 200);
+    border-top: 0px;
+}
+
+QHeaderView::section:vertical {
+    background: rgba(15, 15, 15, 255);  
+    border: 1px solid rgb(200, 200, 200);
+    border-left: 0px;
+}
+
+/* Стиль для таблицы csv */
+QTableView {
+    background: rgb(30, 30, 30);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(80, 80, 80, 255);
+    gridline-color: rgb(200, 200, 200);
+}
+
+QTableView QAbstractScrollArea {
+    background: rgb(15, 15, 15);;
+}
