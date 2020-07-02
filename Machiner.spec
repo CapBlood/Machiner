@@ -12,7 +12,7 @@ def get_pandas_path():
 a = Analysis(['machiner/__main__.py'],
              pathex=['/Users/donsangre/Documents/Place for chill/Workspace/Python/Machiner'],
              binaries=[],
-             datas=[('machiner/app/design.qss', '.')],
+             datas=[('machiner/app/design.qss', 'app/')],
              hiddenimports=['pkg_resources.py2_warn', 'pandas', 'sklearn', 'numpy', 'pytz', 'dateutil', 'scipy.special.cython_special',
                             'sklearn.utils._cython_blas', 'sklearn.neighbors._typedefs', 'sklearn.neighbors.quad_tree',
                             'sklearn.tree._utils'],
